@@ -12,6 +12,10 @@ let randomNum;
 generateRandom();
 let scoreNum = 20;
 let highScoreNum = 0;
+// listen on dom load
+  document.addEventListener("DOMContentLoaded", function(){
+    guess.focus();
+  };
 // listen on check
 check.addEventListener("click", function (e) {
   e.preventDefault();
