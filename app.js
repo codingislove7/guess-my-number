@@ -65,5 +65,5 @@ function checkResult() {
   }
 }
 function generateRandom() {
-  return (randomNum = Math.floor(Math.random() * 20));
+  return (randomNum = Math.floor(Math.random() * 20 +1));
 }
