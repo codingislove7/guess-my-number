@@ -1,0 +1,42 @@
+.background {
+  background: rgb(12, 18, 47);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 18, 47, 1) 0%,
+    rgba(20, 128, 153, 1) 48%,
+    rgba(12, 18, 47, 1) 100%
+  );
+}
+.win {
+  background: rgb(12, 18, 47);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 18, 47, 1) 0%,
+    rgba(22, 180, 67, 1) 48%,
+    rgba(12, 18, 47, 1) 100%
+  );
+}
+.noWin {
+  background: rgb(12, 18, 47);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 18, 47, 1) 0%,
+    rgba(180, 22, 22, 1) 48%,
+    rgba(12, 18, 47, 1) 100%
+  );
+}
+.result {
+  height: 50px;
+  width: 50px;
+  background-color: aliceblue;
+  border-radius: 10%;
+  align-items: center;
+}
+.guessedNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.guessedNumber {
+  width: 90px;
+  height: 60px;
+  font-size: 2rem;
+}

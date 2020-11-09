@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess my number!</title>
+  </head>
+  <body class="background">
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-outline-info ml-3 mt-3 mb-4 btn-sm"
+      data-toggle="modal"
+      data-target="#exampleModal"
+    >
+      About
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content background text-light">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">About</h5>
+          </div>
+          <div class="modal-body text-lead h5">
+            Guess My number.
+            <br />
+            source :
+            <a
+              class="link-color text-warning"
+              href="https://github.com/Super-DLT/guess-my-number"
+              target="blank"
+              >Guess My number</a
+            >
+            <br />code by
+            <a
+              class="link-color text-warning"
+              href="https://github.com/Super-DLT"
+              target="blank"
+              >Behnam Sheykhe.</a
+            >
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-light btn-block"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <div class="container border border-info p-3">
+      <div class="row justify-content-between">
+        <div class="col-3">
+          <button class="btn btn-outline-light" id="again">Again!</button>
+        </div>
+        <div class="col-6 mt-2">
+          <p class="text-light text-right mr-3">( Between 1 and 20 )</p>
+        </div>
+      </div>
+      <h3 class="text-light text-center">Guess My Number !</h3>
+      <div class="container text-center mt-4">
+        <span
+          class="text-dark bg-light h1 px-3 my-5 mt-5 text-center border rounded"
+          id="number"
+          >?</span
+        >
+      </div>
+
+      <div class="row justify-content-center my-5">
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-sm-4">
+                <!-- /////////////////////////////////// -->
+                <form class="row g-2">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      class="form-control guessedNumber"
+                      placeholder="num"
+                      id="guess"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button
+                      class="btn btn-light bt,-large mb-3 ml-2"
+                      id="check"
+                    >
+                      check!
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <!-- Force next columns to break to new line at md breakpoint and up -->
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="container text-right ml-0">
+            <h5 class="text-light">
+              <span id="message">Start Guessing ...</span>
+            </h5>
+            <h5 class="text-light mt-4">
+              Score :
+              <span id="score">20</span>
+            </h5>
+            <h5 class="text-light">
+              High Score :
+              <span id="highScore">0</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper.js -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+      integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+    <!-- Option 2: Separate Popper.js and Bootstrap JS
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
